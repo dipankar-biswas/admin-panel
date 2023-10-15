@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}" >
+    <title>Admin Panel | My Task</title>
+
+    <link href="assets/css/all.min.css" rel="stylesheet" >
+    <!-- Custom CSS -->
+    <link href="assets/css/main.css" rel="stylesheet" >
+    <link href="assets/css/style.css" rel="stylesheet" >
+  </head>
+  <body>
+
+    <div id="apps">
+        <!-- Sidebar Code Start -->
+        <aside>
+            <nav>
+                <div class="brand">
+                    <a href="index.html">
+                        <span class="logo">
+                            <img src="assets/images/logo.png" alt="Logo">
+                        </span>
+                        <span class="text"></span>
+                    </a>
+                    <div class="action">
+                        <span class="ph-lg-none">*</span>
+                        <span class="dt-none dt-lg-block aside-close"><i class="fa-solid fa-xmark"></i></span>
+                    </div>
+                </div>
+                <ul class="side-nav">
+                    <li class="item">
+                        <a href="index.html" class="link"><span>Dashboard</span></a>
+                    </li>
+                    <li class="item tree">
+                        <a href="javascript:void(0)"><span>Brand</span></a>
+                        <ul>
+                            <li><a href="brand-list.html" class="link">All Lists</a></li>
+                            <li><a href="brand-add.html" class="link">New Add</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:void(0)"><span>Order</span></a>
+                        <ul>
+                            <li><a href="javascript:void(0)" class="link">Order List</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:void(0)"><span>Categories</span></a>
+                        <ul>
+                            <li><a href="javascript:void(0)" class="link">Add Category</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:void(0)"><span>Size</span></a>
+                        <ul>
+                            <li><a href="javascript:void(0)" class="link">Add Size</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:void(0)"><span>Color</span></a>
+                        <ul>
+                            <li><a href="javascript:void(0)" class="link">Add Color</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:void(0)"><span>Slider</span></a>
+                        <ul>
+                            <li><a href="javascript:void(0)" class="link">Add Slide</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:void(0)"><span>Tshirt</span></a>
+                        <ul>
+                            <li><a href="javascript:void(0)" class="link">Tshirt List</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:void(0)"><span>Products</span></a>
+                        <ul>
+                            <li><a href="javascript:void(0)" class="link">Add Product</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:void(0)"><span>User</span></a>
+                        <ul>
+                            <li><a href="javascript:void(0)" class="link">Add User</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:void(0)"><span>Apparence</span></a>
+                        <ul>
+                            <li><a href="javascript:void(0)" class="link">Slides</a></li>
+                            <li><a href="javascript:void(0)" class="link">Banners</a></li>
+                            <li><a href="javascript:void(0)" class="link">Website Setup</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:void(0)" class="link"><span>Profile</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Sidebar Code End -->
+
+        <div class="wrapper">
+            <!-- Header Code Start -->
+            <header class="layout-header">
+                <div class="header-content">
+                    <div class="left">
+                        <div class="aside-open dt-none ph-lg-block icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <div class="search icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="language icon">
+                            <i class="fa-solid fa-language"></i>
+                        </div>
+                        <div class="notification icon">
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <div class="avatar">
+                            <img class="user-options-btn" src="assets/images/user.png" alt="Avatar">
+                            <div class="user-options">
+                                <div class="head">
+                                    <div class="image">
+                                        <img src="assets/images/user.png" alt="Avatar">
+                                    </div>
+                                    <div class="content">
+                                        <div class="name">Dipankar</div>
+                                        <div class="sub-title">admin</div>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <hr>
+                                    <a href="#" class="link">
+                                        <div class="icon"><i class="fa-regular fa-user"></i></div>
+                                        <div class="txt">Profile</div>
+                                    </a>
+                                    <a href="#" class="link">
+                                        <div class="icon"><i class="fa-solid fa-gear"></i></div>
+                                        <div class="txt">Settings</div>
+                                    </a>
+                                    <a href="#" class="link">
+                                        <div class="icon"><i class="fa-regular fa-credit-card"></i></div>
+                                        <div class="txt">Billing</div>
+                                    </a>
+                                    <hr>
+                                    <a href="#" class="link">
+                                        <div class="icon"><i class="fa-regular fa-life-ring"></i></div>
+                                        <div class="txt">Help</div>
+                                    </a>
+                                    <a href="#" class="link">
+                                        <div class="icon"><i class="fa-solid fa-dollar-sign"></i></div>
+                                        <div class="txt">Pricing</div>
+                                    </a>
+                                    <a href="#" class="link">
+                                        <div class="icon"><i class="fa-solid fa-question"></i></div>
+                                        <div class="txt">FAQ</div>
+                                    </a>
+                                    <hr>
+                                    <a href="#" class="link">
+                                        <div class="icon"><i class="fa-solid fa-arrow-right-from-bracket"></i></div>
+                                        <div class="txt">Logout</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Header Code End -->
+
+
+
+            <!-- Page Body Content -->
+            <div class="main-content">
+                <!-- Body Code Start -->
+                <div class="layout-content">
+                    <div class="page-content">
+                        
+                        Brand Add page
+
+                    </div>
+                </div>
+                <!-- Body Code End -->
+
+                <!-- Footer Code Start -->
+                <footer class="layout-footer">
+                    <div class="footer-content">
+                        <div class="copyright">2023 Made With By <a href="https://www.enrichitsolutions.com/">enrichit</a></div>
+                        <div class="social">
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">Linkedin</a>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer Code End -->
+            </div>
+            <!-- Page Body Content -->
+
+
+        </div>
+        <div class="site-overly"></div>
+    </div>
+
+    <script src="assets/js/menu-active.js" type="text/javascript"></script>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+
+  </body>
+</html>
